@@ -13,19 +13,10 @@ struct Model: Codable {
     var phone: String?
 }
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+public class Deneme {
+    
+    public func calculate() {
+        print("doğru bir şekilde erişim sağlandı.")
     }
-    
-    func sendRequest() {
-        ApiManager.shared.sendRequest(model: Model.self, with: .getProducts, requestType: .getRequest, parameters: [:]) { <#Result<T, Error>#> in
-            <#code#>
-        }
-    }
-    
-    
 }
 
